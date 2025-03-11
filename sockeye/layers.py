@@ -639,7 +639,7 @@ class MultiHeadAttention(MultiHeadAttentionBase):
                 queries: pt.Tensor,
                 key_values: pt.Tensor,
                 mask: Optional[pt.Tensor] = None,
-                projected_memory_kv: Optional[pt.Tensor] = None) -> pt.Tensor:  # mypy: ignore
+                projected_memory_kv: Optional[pt.Tensor] = None) -> pt.Tensor:
         """
         Computes multi-head attention for queries given a memory tensor.
         If sequence lengths are provided, they will be used to mask the attention scores.
